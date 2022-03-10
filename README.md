@@ -31,7 +31,9 @@ as a build tool. Following are the steps to setup the application locally:
 5. 
 
 # Deployment 
-TBD
+The project is deployed to [Heroku](https://dashboard.heroku.com/apps) and can be accessed at:  
+https://utsa-food-market.herokuapp.com/
+
 
 # Next steps
 1. Setting up a relational database in the Cloud (Heroku).
