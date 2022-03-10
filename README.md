@@ -33,5 +33,10 @@ as a build tool. Following are the steps to setup the application locally:
 # Deployment 
 TBD
 
+# Next steps
+1. Setting up a relational database in the Cloud (Heroku).
+2. Parsing and importing data 
+3. Connecting Spring web service to the database 
+4. 
 
 
