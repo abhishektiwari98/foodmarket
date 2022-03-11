@@ -9,7 +9,11 @@ consume.
 
 
 # Database setup
-The database is configured as Heroku Add-ons. We use [Heroku's managed Postgres service](https://devcenter.heroku.com/articles/heroku-postgresql)
+The database is configured as Heroku Add-ons. We use [Heroku's managed Postgres service](https://devcenter.heroku.com/articles/heroku-postgresql)   
+Database credentials can be found in the Heroku app under `Settings`, and should be made available via environment variables as shown below:  
+![alt text](docs/images/db-configs.png)  
+IMP: Do not add credentials in the git source code. The same env variables can be provided to IntelliJ to run the app locally.   
+
 
 # Build 
 The backend application is developed using Java with [SpringBoot](https://spring.io/projects/spring-boot) and uses [Gradle](https://docs.gradle.org/current/userguide/userguide.html) 
@@ -38,9 +42,10 @@ IMP: It is important to have Procfile with the following command to enable Herok
 `web: java -Dserver.port=$PORT $JAVA_OPTS -jar build/libs/foodmarket-0.0.1-SNAPSHOT.jar`
 
 # Next steps
-1. Setting up a relational database in the Cloud (Heroku).
-2. Parsing and importing data 
-3. Connecting Spring web service to the database 
-4. 
+1. Parsing and importing data.
+2. Develop model classes as needed by the table. 
+3. Develop JPA repository for each entity/table.
+4. Develop basic UI for displaying data.
+5. Develop UI for inserting information in the database. 
 
 
