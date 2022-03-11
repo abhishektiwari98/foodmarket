@@ -34,6 +34,8 @@ as a build tool. Following are the steps to setup the application locally:
 The project is deployed to [Heroku](https://dashboard.heroku.com/apps) and can be accessed at:  
 https://utsa-food-market.herokuapp.com/
 
+IMP: It is important to have Procfile with the following command to enable Heroku to launch the application:   
+`web: java -Dserver.port=$PORT $JAVA_OPTS -jar build/libs/foodmarket-0.0.1-SNAPSHOT.jar`
 
 # Next steps
 1. Setting up a relational database in the Cloud (Heroku).
