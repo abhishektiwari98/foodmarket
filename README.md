@@ -9,7 +9,7 @@ consume.
 
 
 # Database setup
-
+The database is configured as Heroku Add-ons. We use [Heroku's managed Postgres service](https://devcenter.heroku.com/articles/heroku-postgresql)
 
 # Build 
 The backend application is developed using Java with [SpringBoot](https://spring.io/projects/spring-boot) and uses [Gradle](https://docs.gradle.org/current/userguide/userguide.html) 
