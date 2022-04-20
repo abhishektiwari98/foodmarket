@@ -32,7 +32,6 @@ as a build tool. Following are the steps to setup the application locally:
 4. Run the backend by
    1. You can run `FoodmarketApplication` directly from IntelliJ
    2. You can also launch it with gradle as `./gradlew bootRun`
-5. 
 
 # Deployment 
 The project is deployed to [Heroku](https://dashboard.heroku.com/apps) and can be accessed at:  
