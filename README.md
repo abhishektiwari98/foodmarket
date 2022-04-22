@@ -1,5 +1,5 @@
 # Foodmarket
-Understand food products, their ingredients and allergens.
+Understand the food products, their ingredients and allergens in the web application.
 
 Food-market is a webapp developed to help people make informed decisions about their food choices. We collect raw data 
 from FDA and similar public sources, process and transform the raw data into valuable insights that the users can 
