@@ -46,8 +46,12 @@
     <div class="tab-content content">
         <!-- Home Page Content -->
         <div class="tab-pane container active" id="home">
-            <h1>Welcome to Food Market!</h1>
+            <h1>Welcome <span th:text="${user.firstName}"> </span> <span th:text="${user.lastName}"></span>!</h1>
             <p>You can find detailed information about food products, allergens and nutrition details.</p>
+
+            <p>Start by navigating to the Food Groups menu where you can see all the major food categories along with their id. You
+                can take any of these ids and then navigate to the Nutrition menu to get more details about that food category.
+            </p>
         </div>
     </div>
 </div>
