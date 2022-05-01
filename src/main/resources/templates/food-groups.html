@@ -29,10 +29,10 @@
 
     <ul class="nav nav-pills">
         <li class="nav-item">
-            <a class="nav-link active" href="home">Home</a>
+            <a class="nav-link" href="home">Home</a>
         </li>
         <li class="nav-item">
-            <a class="nav-link"  href="foodGroups">Food Groups</a>
+            <a class="nav-link active"  href="foodGroups">Food Groups</a>
         </li>
         <li class="nav-item">
             <a class="nav-link"  href="foodItemsInGroup">Nutrition</a>
@@ -44,11 +44,31 @@
 
 
     <div class="tab-content content">
-        <!-- Home Page Content -->
+        <!-- Page Content -->
         <div class="tab-pane container active" id="home">
-            <h1>Welcome to Food Market!</h1>
-            <p>You can find detailed information about food products, allergens and nutrition details.</p>
+            <div>
+                <h1>Food Groups</h1>
+
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th scope="col"> Group Code </th>
+                            <th scope="col"> Description </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                    <tr th:if="${groups.empty}">
+                            <td colspan="2"> No Groups Available </td>
+                        </tr>
+                        <tr th:each="group : ${groups}" scope="row">
+                            <td><span th:text="${group.code}"> Code </span></td>
+                            <td><span th:text="${group.desc}"> Description </span></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
         </div>
+        <!-- Page Ends -->
     </div>
 </div>
 

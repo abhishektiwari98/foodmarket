@@ -5,6 +5,8 @@ public final class Constants {
     public static final String INDEX_PAGE_VIEW_NAME = "index";
     public static final String SIGNUP_PAGE_VIEW_NAME = "signup";
     public static final String ERROR_PAGE_VIEW_NAME = "error";
+    public static final String FOOD_GROUPS_VIEW_NAME = "food-groups";
+    public static final String FOOD_GROUP_ITEMS_VIEW_NAME = "food-group-details";
 
     public static final String SESSION_AUTH_KEY = "authenticated";
     public static final String REDIRECT_PREFIX = "redirect:";

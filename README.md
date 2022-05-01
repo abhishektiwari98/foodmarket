@@ -6,13 +6,18 @@ from FDA and similar public sources, process and transform the raw data into val
 consume. 
 
 # Architecture 
-
+The following diagram summarizes the architecture of the project along with various technologies and components used:   
+![alt text](docs/images/architecture.png)
 
 # Database setup
-The database is configured as Heroku Add-ons. We use [Heroku's managed Postgres service](https://devcenter.heroku.com/articles/heroku-postgresql)   
+The database is created using AWS RDS service with Postgres database. We use [AWS's managed Postgres service](https://aws.amazon.com/rds/postgresql/)   
 Database credentials can be found in the Heroku app under `Settings`, and should be made available via environment variables as shown below:  
 ![alt text](docs/images/db-configs.png)  
 IMP: Do not add credentials in the git source code. The same env variables can be provided to IntelliJ to run the app locally.   
+
+
+# Database schema 
+![alt text](docs/images/schema.png)  
 
 
 # Build 
