@@ -44,12 +44,3 @@ https://utsa-food-market.herokuapp.com/
 
 IMP: It is important to have Procfile with the following command to enable Heroku to launch the application:   
 `web: java -Dserver.port=$PORT $JAVA_OPTS -jar build/libs/foodmarket-0.0.1-SNAPSHOT.jar`
-
-# Next steps
-1. Parsing and importing data.
-2. Develop model classes as needed by the table. 
-3. Develop JPA repository for each entity/table.
-4. Develop basic UI for displaying data.
-5. Develop UI for inserting information in the database. 
-
-
